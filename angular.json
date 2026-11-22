@@ -55,6 +55,7 @@
               "src/styles/tailwind/tailwind.css",
               "src/styles.scss"
             ],
+            "outputPath": "dist/ng-v22-ssr",
             "stylePreprocessorOptions": {
               "includePaths": [
                 "src"
