@@ -36,12 +36,12 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-        - name: Build Angular
-          run: |
-            npx ng build \
-              --project=ng-v22-ssr \
-              --configuration=production \
-              --base-href=/ng-v22-ssr/
+      - name: Build Angular
+        run: |
+          npx ng build \
+            --project=ng-v22-ssr \
+            --configuration=production \
+            --base-href=/ng-v22-ssr/
 
       - name: Prepare Pages
         run: |
