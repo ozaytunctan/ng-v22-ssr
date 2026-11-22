@@ -12,15 +12,15 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
 
       <a class="hover:underline"
          [routerLink]="['/about']"
-         routerLinkActive="text-blue-500 underline">About</a>
+         routerLinkActive="text-blue-500 underline">Hakkımda</a>
 
       <a class="hover:underline"
          routerLink="/pricing"
-         routerLinkActive="text-blue-500 underline">Pricing</a>
+         routerLinkActive="text-blue-500 underline">Fiyatlandırma</a>
 
       <a class="hover:underline"
          routerLink="/contact"
-         routerLinkActive="text-blue-500 underline">Contact</a>
+         routerLinkActive="text-blue-500 underline">İletişim</a>
     </nav>
   `,
 })

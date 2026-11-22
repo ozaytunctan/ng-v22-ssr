@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styles: ``,
   template: `
 
-    <h1 class="text-3xl"> Pricing Page </h1>
+    <h1 class="text-3xl"> Fiyatlandırma Sayfası Demo </h1>
     <hr class="my-2">
 
     <section>

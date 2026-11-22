@@ -5,13 +5,12 @@ import { Component } from '@angular/core';
   selector: 'contact',
   styles: ``,
   template: `
-    <h1 class="text-3xl"> Contact Page </h1>
+    <h1 class="text-3xl"> İletişim Bilgileri</h1>
     <hr class="my-2">
 
     <section class="mb-4">
-      <span class="mb-4">Özay TUNÇTAN</span>
-      <hr>
-      <span>Tel: 05380110467</span>
+      <p>Özay TUNÇTAN</p>
+      <p>Tel: 05380110467</p>
     </section>
   `,
 })
