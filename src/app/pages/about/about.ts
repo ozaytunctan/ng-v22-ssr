@@ -7,20 +7,15 @@ import { isPlatformBrowser, isPlatformServer } from '@angular/common';
   selector: 'about-page',
   styles: ``,
   template: `
-    <h1 class="text-3xl">About Page</h1>
+    <h1 class="text-3xl">Hakkımda</h1>
     <hr class="my-2" />
 
     <section>
       <p class="mb-4">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, aut consequuntur culpa
-        dignissimos ea, eligendi fugiat illo laboriosam nihil nobis odio optio praesentium quaerat
-        quasi quidem reprehenderit saepe, sit! A ab adipisci aperiam, asperiores aut commodi
-        dignissimos doloremque dolores doloribus ea ex explicabo impedit ipsa minus nisi non nostrum
-        nulla odio odit officia perferendis provident quaerat qui quia ratione recusandae,
-        reiciendis repudiandae sit tempore ut veritatis vitae voluptatibus voluptatum? Accusantium
-        deserunt doloribus eos laudantium obcaecati officia perferendis repellendus sed. Dignissimos
-        esse, inventore odio quis quo repellendus temporibus voluptatum. Atque blanditiis eos
-        eveniet hic illo placeat quia quibusdam repellat ut, vitae!
+        Özay TUNÇTAN
+        Siirt Universitesi Bilgisayar Mühendisliği bölümünden 2017 yılında mezun oldum .
+        Şuan <b>T.C İçişleri Bakanlığı</b> Bilgi Teknolojileri Genel Müdürlüğünde Yazılım Uzmanı olarak
+        görev yapmaktayım.
       </p>
     </section>
   `,
@@ -37,14 +32,14 @@ export class About implements OnInit {
     console.log({isServer:isPlatformServer(this.platform)});//client tarafı false server tarafında true olacaktır.
     //node js tarafında document, navigator vb erişilemez. hata alınmaması adına bu şekilde bir kontrol gerekir.
     if (isPlatformBrowser(this.platform)){
-      document.title="About Page Browser"
+      // document.title="Hakkımda"
     }
 
 
-    this.title.setTitle('About| ');
-    this.meta.updateTag({ name: 'description', content: `About Page SSR ` });
-    this.meta.updateTag({ name: 'og:title', content: `About Page` });
-    this.meta.updateTag({ name: 'keywords', content: `about,angular,ssr` });
+    this.title.setTitle('Hakkımda| ');
+    this.meta.updateTag({ name: 'description', content: `Özay TUNÇTAN | ` });
+    this.meta.updateTag({ name: 'og:title', content: `Hakkımda` });
+    this.meta.updateTag({ name: 'keywords', content: `Java , Spring & Spring Boot , Angular ` });
 
   }
 }
