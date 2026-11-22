@@ -40,8 +40,7 @@ jobs:
         run: |
           npx ng build \
             --project=ng-v22-ssr \
-            --configuration=production \
-            --base-href=/ng-v22-ssr/
+            --configuration=production
 
       - name: Prepare Pages
         run: |
