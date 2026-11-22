@@ -48,7 +48,7 @@ jobs:
       # Prepare static SPA fallback
       - name: Prepare Pages
         run: |
-          cp dist/ng-v22-ssr/browser/index.html \
+          cp dist/ng-v22-ssr/browser/index.csr.html \
              dist/ng-v22-ssr/browser/404.html
 
       - name: Upload artifact
