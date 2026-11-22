@@ -8,21 +8,21 @@ export const routes: Routes = [
   },
   {
     path: 'about',
-    title:'About Page',
+    title:'Hakkımda',
     loadComponent: () =>
       import('./pages/about/about') //
         .then((c) => c.About),
   },
   {
     path: 'pricing',
-    title:'Pricing Page',
+    title:'Fiyatlandırma',
     loadComponent: () =>
       import('./pages/pricing/pricing-page') //
         .then((c) => c.PricingPage),
   },
   {
     path: 'contact',
-    title:'Contact Page',
+    title:'İletişim',
     loadComponent: () =>
       import('./pages/contact/contact-page') //
         .then((c) => c.ContactPage),
