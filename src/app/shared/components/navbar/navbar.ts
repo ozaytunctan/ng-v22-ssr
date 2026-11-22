@@ -9,6 +9,7 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
     <nav
       class="text-white gap-2 top-0 absolute z-50 w-full flex justify-end px-2 py-3 bg-slate-900 shadow-md"
     >
+
       <a class="hover:underline"
          [routerLink]="['/about']"
          routerLinkActive="text-blue-500 underline">About</a>
