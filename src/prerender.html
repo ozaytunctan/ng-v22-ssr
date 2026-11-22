@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script type="module" src="/@vite/client"></script>
+  <meta charset="utf-8">
+  <title>About| </title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="About Page SSR ">
+  <meta name="og:title" content="About Page">
+  <meta name="keywords" content="about,angular,ssr">
+</head>
+<body><!--nghm-->
+<script type="text/javascript" id="ng-event-dispatch-contract">(() => {
+  function p(t, n, r, o, e, i, f, m) {
+    return { eventType: t, event: n, targetElement: r, eic: o, timeStamp: e, eia: i, eirp: f, eiack: m };
+  }
+
+  function u(t) {
+    let n = [], r = e => {
+      n.push(e);
+    };
+    return {
+      c: t, q: n, et: [], etc: [], d: r, h: e => {
+        r(p(e.type, e, e.target, t, Date.now()));
+      }
+    };
+  }
+
+  function s(t, n, r) {
+    for (let o = 0; o < n.length; o++) {
+      let e = n[o];
+      (r ? t.etc : t.et).push(e), t.c.addEventListener(e, t.h, r);
+    }
+  }
+
+  function c(t, n, r, o, e = window) {
+    let i = u(t);
+    e._ejsas || (e._ejsas = {}), e._ejsas[n] = i, s(i, r), s(i, o, !0);
+  }
+
+  window.__jsaction_bootstrap = c;
+})();
+</script>
+<script>window.__jsaction_bootstrap(document.body, 'ng', ['click'], []);</script>
+<app-root ng-version="22.3.0" ngh="1" ng-server-context="ssg">
+  <navbar ngh="0">
+    <nav class="text-white gap-2 top-0 absolute z-50 w-full flex justify-end px-2 py-3 bg-slate-900 shadow-md"><a
+      routerlinkactive="active" class="hover:underline active" href="/about" jsaction="click:;">About</a><a
+      routerlink="/pricing" routerlinkactive="active" class="hover:underline" href="/pricing"
+      jsaction="click:;">Pricing</a><a routerlink="/contact" routerlinkactive="active" class="hover:underline"
+                                       href="/contact" jsaction="click:;">Contact</a></nav>
+  </navbar>
+  <main class="max-w-3xl m-auto mt-16 px-2">
+    <router-outlet></router-outlet>
+    <about-page ngh="0"><h1 class="text-3xl">About Page</h1>
+      <hr class="my-2">
+      <section><p class="mb-4"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, aut consequuntur culpa
+        dignissimos ea, eligendi fugiat illo laboriosam nihil nobis odio optio praesentium quaerat quasi quidem
+        reprehenderit saepe, sit! A ab adipisci aperiam, asperiores aut commodi dignissimos doloremque dolores doloribus
+        ea ex explicabo impedit ipsa minus nisi non nostrum nulla odio odit officia perferendis provident quaerat qui
+        quia ratione recusandae, reiciendis repudiandae sit tempore ut veritatis vitae voluptatibus voluptatum?
+        Accusantium deserunt doloribus eos laudantium obcaecati officia perferendis repellendus sed. Dignissimos esse,
+        inventore odio quis quo repellendus temporibus voluptatum. Atque blanditiis eos eveniet hic illo placeat quia
+        quibusdam repellat ut, vitae! </p></section>
+    </about-page><!--container--></main>
+</app-root>
+<script src="main.js" type="module"></script>
+<link rel="modulepreload" href="chunk-JV7SA527.js">
+
+
+<script id="ng-state" type="application/json">{"__nghData__":[{}, {"c": {"2":[{"i": "c2110511168", "r": 1}]}}]}</script>
+</body>
+</html>

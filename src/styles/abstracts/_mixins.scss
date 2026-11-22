@@ -1,0 +1,64 @@
+@use './variables' as v;
+@mixin flex(
+  $direction: row,
+  $justify: flex-start,
+  $align: center,
+  $gap: 0
+) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+  gap: $gap;
+}
+
+/**
+.sidebar {
+  @include flex(column, flex-start, stretch, 12px);
+}
+ */
+
+
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == sm {
+    @media (min-width: 640px) {
+      @content;
+    }
+  } @else if $breakpoint == md {
+    @media (min-width: 768px) {
+      @content;
+    }
+  } @else if $breakpoint == lg {
+    @media (min-width: 1024px) {
+      @content;
+    }
+  } @else if $breakpoint == xl {
+    @media (min-width: 1280px) {
+      @content;
+    }
+  }
+}
+
+/**
+.content {
+  padding: 16px;
+
+  @include respond-to(md) {
+    padding: 24px;
+  }
+
+  @include respond-to(lg) {
+    padding: 32px;
+  }
+}
+ */
+@mixin card(
+  $padding: 16px,
+  $radius: v.$radius-md
+) {
+  background: v.$surface;
+  padding: $padding;
+  border-radius: $radius;
+  border: 1px solid v.$border-color;
+  box-shadow: v.$shadow-sm;
+}

@@ -52,8 +52,23 @@
               }
             ],
             "styles": [
-              "src/styles.css"
-            ]
+              "src/styles/tailwind/tailwind.css",
+              "src/styles.scss"
+            ],
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "src"
+              ]
+            },
+            "server": "src/main.server.ts",
+            "outputMode": "server",
+            "prerender": true,
+            "security": {
+              "allowedHosts": []
+            },
+            "ssr": {
+              "entry": "src/server.ts"
+            }
           },
           "configurations": {
             "production": {
