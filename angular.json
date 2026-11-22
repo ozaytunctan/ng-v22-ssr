@@ -6,7 +6,7 @@
   },
   "newProjectRoot": "projects",
   "projects": {
-    "ng-ssr-demo": {
+    "ng-v22-ssr": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -99,10 +99,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "ng-ssr-demo:build:production"
+              "buildTarget": "ng-v22-ssr:build:production"
             },
             "development": {
-              "buildTarget": "ng-ssr-demo:build:development"
+              "buildTarget": "ng-v22-ssr:build:development"
             }
           },
           "defaultConfiguration": "development"
