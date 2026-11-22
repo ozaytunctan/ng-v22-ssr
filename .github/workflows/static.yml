@@ -40,12 +40,30 @@ jobs:
         run: |
           npx ng build \
             --project=ng-v22-ssr \
-            --configuration=production
+            --configuration=production \
+            --base-href=/ng-v22-ssr/
 
       - name: Prepare Pages
         run: |
-          cp dist/ng-v22-ssr/browser/index.html \
-             dist/ng-v22-ssr/browser/404.html
+          cd dist/ng-v22-ssr/browser
+
+          # Check build output
+          if [ ! -f index.csr.html ] && [ ! -f index.html ]; then
+            echo "Angular build output not found!"
+            exit 1
+          fi
+
+          # Create root index.html if necessary
+          if [ ! -f index.html ]; then
+            cp index.csr.html index.html
+          fi
+
+          # Create GitHub Pages SPA fallback
+          if [ -f index.csr.html ]; then
+            cp index.csr.html 404.html
+          else
+            cp index.html 404.html
+          fi
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
